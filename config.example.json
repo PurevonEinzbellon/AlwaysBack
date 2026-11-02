@@ -1,0 +1,42 @@
+{
+  "ownerQq": "123456789",
+  "botQq": "987654321",
+  "onebotUrl": "ws://127.0.0.1:3001/",
+  "groupIds": [],
+  "groupCallNames": [],
+  "groupPersona": {
+    "publicOwnerRelationship": "",
+    "forRelationship": null
+  },
+  "modelUrl": "http://127.0.0.1:8000/v1/chat/completions",
+  "modelName": "your-model",
+  "analysisHourLocal": 3,
+  "historyLimit": 20,
+  "groupHistoryLimit": 24,
+  "groupObservation": {
+    "excludedGroupIds": [],
+    "maxQueue": 256,
+    "maxGroups": 100,
+    "maxMessagesPerGroup": 100,
+    "rawTtlHours": 24,
+    "thoughtTtlDays": 30,
+    "intervalMinutes": 30,
+    "maxGroupsPerRound": 4,
+    "maxMessagesPerGroupPerRound": 5,
+    "maxCharsPerRound": 6000,
+    "maxCallsPerDay": 12,
+    "maxInputCharsPerDay": 50000,
+    "maxEstimatedTokensPerDay": 60000,
+    "maxOutputTokens": 500
+  },
+  "proactive": {
+    "quietStartHour": 23,
+    "quietEndHour": 8,
+    "maxUnanswered": 2,
+    "relationshipProfiles": {
+      "stranger": { "enabled": false, "minIntervalMinutes": 720, "maxIntervalMinutes": 1440, "minIdleMinutes": 180, "maxPer24Hours": 1 },
+      "friend": { "enabled": true, "minIntervalMinutes": 240, "maxIntervalMinutes": 480, "minIdleMinutes": 90, "maxPer24Hours": 2 },
+      "partner": { "enabled": true, "minIntervalMinutes": 120, "maxIntervalMinutes": 240, "minIdleMinutes": 60, "maxPer24Hours": 3 }
+    }
+  }
+}
